@@ -25,7 +25,7 @@ public class GeneratorScene : MonoBehaviour {
         GameObject room = (GameObject)Instantiate(availableRooms[randomRoomIndex]);
 
         //3
-        float roomWidth = room.transform.FindChild("Lilia").localScale.x;
+        float roomWidth = room.transform.Find("Lilia").localScale.x;
 
         //4
         float roomCenter = farhtestRoomEndX + roomWidth * 0.5f;
@@ -59,7 +59,7 @@ public class GeneratorScene : MonoBehaviour {
         foreach (var room in currentRooms)
         {
             //7
-            float roomWidth = room.transform.FindChild("Lilia").localScale.x;
+            float roomWidth = room.transform.Find("Lilia").localScale.x;
             float roomStartX = room.transform.position.x - (roomWidth * 0.5f);
             float roomEndX = roomStartX + roomWidth;
 
