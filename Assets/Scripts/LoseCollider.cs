@@ -11,10 +11,8 @@ public class LoseCollider : MonoBehaviour {
 		}
 	}
 
-	private void Lose()
+	private static void Lose()
 	{
-		// here load game over screen
-		Debug.Log("You lost!");
-		SceneManager.LoadScene("Jumping Bob");
+		SceneManager.LoadScene("Game Over");
 	}
 }
