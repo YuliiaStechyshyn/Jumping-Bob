@@ -15,4 +15,12 @@ public class UIManager : MonoBehaviour {
         var current = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(current + 1);
     }
+
+    public void ClickExit()
+
+    {
+        Debug.Log("Quiting");
+        Application.Quit();
+
+    }
 }
