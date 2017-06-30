@@ -23,4 +23,11 @@ public class UIManager : MonoBehaviour {
         Application.Quit();
 
     }
+
+    public void GotoMenu()
+    {
+        Debug.Log("Go to menu");
+    
+        SceneManager.LoadScene("Main Menu");
+    }
 }
