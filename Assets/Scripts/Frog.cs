@@ -27,5 +27,6 @@ public class Frog : MonoBehaviour
     {
         var otherParent = other.gameObject.transform.parent;
         _canJump = otherParent && otherParent.GetComponent<Lilia>();
+        Debug.Log(_canJump);
     }
 }
